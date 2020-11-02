@@ -14,6 +14,7 @@ class Termii {
 		$caFile = __DIR__.'/../res/cacert.pem';
 		$this->config = (object) [
 			"host" =>  "https://termii.com/api",
+			"from" => $config['from'],
 			"apikey" => $config['apikey'],
 			"certificate" =>  $caFile || $config['certificate']
 		];
