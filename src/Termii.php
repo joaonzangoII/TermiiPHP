@@ -15,6 +15,7 @@ class Termii {
 		$this->config = (object) [
 			"host" =>  "https://termii.com/api",
 			"apikey" => $config['apikey'],
+			"from" => $config['from'],
 			"certificate" =>  $caFile || $config['certificate']
 		];
     }
