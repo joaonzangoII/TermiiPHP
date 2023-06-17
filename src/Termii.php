@@ -13,7 +13,7 @@ class Termii {
 	public function __construct($config) {
 		$caFile = __DIR__.'/../res/cacert.pem';
 		$this->config = (object) [
-			"host" =>  "https://termii.com/api",
+			"host" =>  "https://api.ng.termii.com/api",
 			"apikey" => $config['apikey'],
 			"from" => $config['from'],
 			"certificate" =>  $caFile || $config['certificate']
